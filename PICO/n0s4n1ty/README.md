@@ -14,8 +14,10 @@ Your mission, should you choose to accept it, is to navigate to the provided web
 PRINCE NIYONSHUTI N.
 
 ### hiny
-1 : File upload was not sanitized
-2 : Whenever you get a shell on a remote machine, `check sudo -l`
+1. File upload was not sanitized
+2. Whenever you get a shell on a remote machine, `check sudo -l`
 
 ### Write-up
-(ここに解答の方針や手順、コードなどを記述します)
+**1.** 
+`shell.phpを送信`
+**2. **
