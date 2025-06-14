@@ -18,18 +18,20 @@ PRINCE NIYONSHUTI N.
 2. Whenever you get a shell on a remote machine, `check sudo -l`
 
 ### Write-up
-shell.phpをサーバーにアップロードします。
 
-アップロードしたWebシェルに?cmd=sudo -lを送信し、www-dataユーザーのsudo権限を確認します。
+1.  **`shell.php`** をサーバーに **アップロードします**。
 
-Shell
+2.  アップロードしたWebシェルに `?cmd=sudo -l` を送信し、`www-data`ユーザーの`sudo`権限を **確認します**。
 
-Matching Defaults entries for www-data on challenge: env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
-User www-data may run the following commands on challenge:
-    (ALL) NOPASSWD: ALL
-これにより、www-dataユーザーがパスワードなしで全てのコマンドをsudo実行できることがわかります。
+    ```shell
+    Matching Defaults entries for www-data on challenge: env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+    User www-data may run the following commands on challenge:
+        (ALL) NOPASSWD: ALL
+    ```
+    > **[重要]**
+    > これにより、`www-data`ユーザーが **パスワードなしで全てのコマンド (`ALL`) を `sudo` 実行できる** ことが判明しました。これは攻撃の決定的な足がかりとなります。
 
-?cmd=sudo cat /root/flag.txt を実行し、root権限でフラグを読み取ります。
+3.  上記の権限を使い、`?cmd=sudo cat /root/flag.txt` を実行して、最終目的である***フラグを入手します***。
 
 ### Flag
 `FLAG : picoCTF{wh47_c4n_u_d0_wPHP_d698d800}`
