@@ -19,9 +19,9 @@ Nana Ama Atombo-Sackey.
 
 ### Write-up
 
-https://qiita.com/Brutus/items/0d6690aab71d802ab75f を参照
-`hash-identifier`を使用
-md5,sha-1,sha256のハッシュが提示されるのでその元データを答える問題。
+https://qiita.com/Brutus/items/0d6690aab71d802ab75f を参照　　
+`hash-identifier`を使用　　
+md5,sha-1,sha256のハッシュが提示されるのでその元データを答える問題。　　
 
 ```
 $ nc verbal-sleep.picoctf.net 51759
