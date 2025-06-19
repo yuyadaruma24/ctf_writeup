@@ -66,7 +66,7 @@ syreal
   '''
   
 4. 　`crowd = input('Crowd: ')`でユーザーが入力した情報を`song_lines[lip] = 'Crowd: ' + crowd`歌に入れている．
-5.下記のようなコードで書かれいているため，`something_String;RETURN 0`のように入力すると**flag**を得ることが出来る．
+5. 下記のようなコードで書かれいているため，`something_String;RETURN 0`のように入力すると**flag**を得ることが出来る．   
   '''
   for line in song_lines[lip].split(';'):
           if line == '' and song_lines[lip] != '':
