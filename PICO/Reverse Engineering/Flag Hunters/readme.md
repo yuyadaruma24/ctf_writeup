@@ -39,7 +39,8 @@ syreal
   '''    
 
 3.  歌詞を表示する箇所が下記のように書かれている．
-  '''
+
+  ```
   # Print lyrics
     line_count = 0
     lip = start
@@ -63,13 +64,13 @@ syreal
           print(line, flush=True)
           time.sleep(0.5)
           lip += 1
-  '''
+  ```
   
 4. 　`crowd = input('Crowd: ')`でユーザーが入力した情報を`song_lines[lip] = 'Crowd: ' + crowd`歌に入れている．
    
 5. 　下記のようなコードで書かれいているため，`something_String;RETURN 0`のように入力すると**flag**を得ることが出来る．
    
-  '''
+  ```
   for line in song_lines[lip].split(';'):
           if line == '' and song_lines[lip] != '':
             continue
@@ -77,7 +78,7 @@ syreal
    ...
   elif re.match(r"RETURN [0-9]+", line):
             lip = int(line.split()[1])
-  '''
+  ```
 
 
   
