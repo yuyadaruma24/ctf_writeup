@@ -22,7 +22,7 @@ Prince Niyonshuti N.
 
 ### wiresharkで確認
 1. パケットを時系列順に並べる
-2. ペイロード部分に
+2. ペイロード部分を取り出す
  ```
 cGljb0NURg==
 
