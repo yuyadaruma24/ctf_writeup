@@ -26,9 +26,9 @@ Shuailin Pan (LeConjuror)
 3. base64でエンコードされていそうなのでデコードするとflagが見つかった．
 
 ### LSBとは
-least signficant bitの略で，**末尾のビットのこと**　　
-LSB方式のsteganographyとはLSBを書き換えることで、あまり見た目に影響させずにデータを隠すものである
-参考　　
+least signficant bitの略で，**末尾のビットのこと**  
+LSB方式のsteganographyとはLSBを書き換えることで、あまり見た目に影響させずにデータを隠すものである  
+参考  
 https://tkmr.hatenablog.com/entry/2014/07/28/223854#:~:text=LSB%E3%81%A8%E3%81%AFleast%20significant,%E3%82%92%E9%9A%A0%E3%81%99%E3%82%82%E3%81%AE%E3%81%A7%E3%81%82%E3%82%8B%E3%80%82
 
 ### Flag
