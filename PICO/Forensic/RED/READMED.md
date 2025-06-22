@@ -1,7 +1,7 @@
 # RED
 
 - **CTF:** picoCTF 2025
-- **Category:*Forensics* 
+- **Category**:*Forensics* 
 - **Difficulty:** Easy
 
 ## Description
