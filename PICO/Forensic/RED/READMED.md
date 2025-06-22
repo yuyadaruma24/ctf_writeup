@@ -18,7 +18,9 @@ Shuailin Pan (LeConjuror)
 
 ## Write-up
 
-### dを求めることで復号が可能
+### red.pngを解析
+![red](https://github.com/user-attachments/assets/5a0e2956-8ab9-42d0-911c-3538c282daee)
+
 1. `exiftool`で**CHECKLSB**が出現した．
 2. `zsteg -a`を用いたところ`cGljb0NURntyM2RfMXNfdGgzX3VsdDFtNHQzX2N1cjNfZjByXzU0ZG4zNTVffQ==`が見られた．
 3. base64でエンコードされていそうなのでデコードするとflagが見つかった．
