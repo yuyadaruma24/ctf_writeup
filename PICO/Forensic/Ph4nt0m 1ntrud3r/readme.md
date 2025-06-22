@@ -20,26 +20,25 @@ Prince Niyonshuti N.
 
 ## Write-up
 
-https://zenn.dev/spacemarket/articles/40be4b419fe1a6 を参照  
+### wiresharkで確認
+1. パケットを時系列順に並べる
+2. ペイロード部分に
+ ```
+cGljb0NURg==
 
-n,e,cryptdataがわかっている状態
+ezF0X3c0cw==
 
-### 捕捉：RSA暗号の作成・復号式
-1. 2つの異なる素数pとqを選ぶ
-2. n = p * q
-3. f = (p-1) * (q-1)
-4. 素数eを選ぶ
-5. d = e**-1(mod(f)
-暗号化
-6. C = M**e(mod(f)
-復号化
-7. M = C**d(mod(f))
+bnRfdGg0dA==
 
-### dを求めることで復号が可能
-1. `d = pow(e, -1, f)` -> ((e ** -1) % f)
-2. `m = pow(c, d ,n)`をすることで復号化されたメッセージの整数表現を得られる
-3. 得られたmを`print(long_to_bytes(m).decode())`を用いてバイト化，そして復号することでflagを得られる
+XzM0c3lfdA==
 
+YmhfNHJfOQ==
+
+NjZkMGJmYg==
+
+fQ==
+```
+3. base64でデコードするとflagを見つけることが出来る．
 
 ### Flag
-`FLAG : picoCTF{tw0_1$_pr!m381772be5}`
+`FLAG : picoCTF{1t_w4snt_th4t_34sy_tbh_4r_966d0bfb}`
