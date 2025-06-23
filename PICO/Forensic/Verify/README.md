@@ -21,7 +21,7 @@ Additional details will be available after launching your challenge instance.
 ## Write-up
 
 ### checksumを確認
-1. `sha256sum flags/* | grep "467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02"`を用いてチェックサムが同じファイルを`/files`から探す
+1. `sha256sum files/* | grep "467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02"`を用いてチェックサムが同じファイルを`files/*`から探す
 2. `467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02  files/c6c8b911`と出力されるので`c6c8b911`が該当ファイルだとわかる
 3. `./decrypt.sh files/c6c8b911`を用いることでflagを得ることが出来る．
 
