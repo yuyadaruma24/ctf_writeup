@@ -20,7 +20,7 @@ Jeffery John
 ### Write-up
 1. ```
    ssh ctf-player@titan.picoctf.net -p 53563
-  ``` を実行する
+   ``` を実行する
 2. `ctf-player@titan.picoctf.net's password:`
 と表示されるのでパスワードを入力するとflagを得ることが出来る
 
