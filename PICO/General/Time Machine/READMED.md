@@ -20,6 +20,17 @@ Jeffery John
 
 
 ### Write-up
+1. `git log message.txt`を実行する
+2. ```
+   git log message.txt
+commit 10228f3d6437701ef5aaac04213757031f30ebec (HEAD -> master)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:24 2024 +0000
+
+    picoCTF{t1m3m@ch1n3_8defe16a}
+
+   ```
+flagを得ることが出来る．
 
 ### Flag
-`FLAG : picoCTF{pr3tty_c0d3_743d0f9b}`
+`FLAG : picoCTF{t1m3m@ch1n3_8defe16a}`
