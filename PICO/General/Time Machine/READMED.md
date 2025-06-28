@@ -20,7 +20,7 @@ Jeffery John
 
 
 ### Write-up
-1. `git log message.txt`を実行する
+1. ```git log message.txt```を実行する
 2.
     ```
    git log message.txt
