@@ -29,3 +29,20 @@ Yahaya Meddy
 
 ### flag
 `FLAG : picoCTF{r3st0r1ng_th3_by73s_752d2c00}`
+
+
+### 捕捉
+- ファイル形式とヘッダ（マジックナンバー）一覧
+
+| ファイル形式 | 拡張子 | ヘッダ (16進数/Hex) | 備考 |
+| :--- | :--- | :--- | :--- |
+| **JPEG** | `.jpg`, `.jpeg` | `FF D8 FF` | |
+| **PNG** | `.png` | `89 50 4E 47 0D 0A 1A 0A` | `.PNG....` |
+| **GIF** | `.gif` | `47 49 46 38` | GIF87a/89a |
+| **PDF** | `.pdf` | `25 50 44 46` | %PDF |
+| **ZIP / Office** | `.zip`, `.docx`, `.xlsx` | `50 4B 03 04` | PK.. |
+| **EXE (Windows)** | `.exe` | `4D 5A` | MZ |
+| **BITMAP** | `.bmp` | `42 4D` | BM |
+| **MP3** | `.mp3` | `FF FB` | |
+| **GZIP** | `.gz` | `1F 8B` | |
+| **MP4** | `.mp4` | `66 74 79 70` | ftyp |
